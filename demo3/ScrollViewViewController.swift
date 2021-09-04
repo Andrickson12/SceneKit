@@ -66,7 +66,7 @@ class ScrollViewViewController: UIViewController, UIScrollViewDelegate {
         let pinchRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(pinchGesture))
         myScene.addGestureRecognizer(pinchRecognizer)
         
-        let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGesture))
+        _ = UIPanGestureRecognizer(target: self, action: #selector(panGesture))
        // myScene.addGestureRecognizer(panRecognizer)
         
         let rotationRecognizer = UIRotationGestureRecognizer(target: self, action: #selector(rotationGesture))
